@@ -33,32 +33,12 @@ button:hover {
         text-align: center;
     }
 
-    .project-section {
-        grid-template-columns: 1fr;
+    .navbar a {
+        margin: 10px 0;
     }
 }
 
-/* Use grid to lay out the project section */
-.project-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
 
-/* Style the project cards with a hover effect and shadow */
-.project-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 /* Use media queries to make project grid responsive on mobile */
 @media (max-width: 480px) {
@@ -187,4 +167,24 @@ footer {
     margin: 10px 0;
 }
  
-  
+/* Add a smooth transition between the black navbar and the green hero section */
+.hero, .skills {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    text-align: center;
+}
+
+.skills {
+    text-align: left;
+/* Adjust the width of hero and skills sections for smaller screens */
+@media (max-width: 768px) {
+    .hero, .skills {
+        max-width: 90%;
+        padding: 20px;
+    }
+}
