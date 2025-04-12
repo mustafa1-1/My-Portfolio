@@ -98,3 +98,29 @@ form button {
 form button:hover {
     background-color: #28a745;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0a0a;
+    margin-top: 60px;
+    color: #aaa;
+  }
+  nav {
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  nav a {
+    color: #66ccff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+  
+  
